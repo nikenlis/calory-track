@@ -36,7 +36,6 @@ class UploadMakananRemoteDatasourceImpl
       final response = await http.Response.fromStream(streamedResponse);
       final hasil = jsonDecode(response.body);
       final message = hasil['detail'] ?? 'Terjadi kesalahan.';
-      print('Response: ${response.statusCode} - $hasil');
 
       if (response.statusCode == 200) {
         return UploadMakananModel.fromJson(hasil);

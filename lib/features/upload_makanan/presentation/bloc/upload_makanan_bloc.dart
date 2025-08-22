@@ -20,7 +20,6 @@ class UploadMakananBloc extends Bloc<UploadMakananEvent, UploadMakananState> {
         (data) => emit(UploadMakananSuccess(data)),
       );
     });
-
     on<ResetUploadMakanan>((event, emit) => emit(UploadMakananInitial()));
   }
 }

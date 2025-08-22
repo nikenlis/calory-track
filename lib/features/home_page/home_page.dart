@@ -19,9 +19,9 @@ class HomePage extends StatelessWidget {
             height: MediaQuery.of(context).size.height / 6.5,
           ),
           // Text(
-          //   'Rasa',
-          //   style: GoogleFonts.yesteryear(
-          //       fontSize: 52, fontWeight: semiBold, color: mainColor),
+          //   'Selamat Datang di Rasa',
+          //   style: blackTextStyle.copyWith(
+          //       fontSize: 20, fontWeight: bold,),
           // ),
           Text('Rasa',
               style: TextStyle(
@@ -30,6 +30,7 @@ class HomePage extends StatelessWidget {
                 fontWeight: semiBold,
                 color: mainColor
               )),
+
           SizedBox(
             height: 4,
           ),
@@ -53,7 +54,7 @@ class HomePage extends StatelessWidget {
               child: Center(
                 child: ListTile(
                   leading: SizedBox(
-                    width: 40,
+                    width: 30,
                   ),
                   title: Text(
                     'Scan Makanan',
@@ -70,7 +71,6 @@ class HomePage extends StatelessWidget {
           ),
           GestureDetector(
             onTap: () {
-              
               Navigator.pushNamed(context, AppRoute.uploadMakananPage);
             },
             child: Container(
@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
               child: Center(
                 child: ListTile(
                   leading: SizedBox(
-                    width: 40,
+                    width: 30,
                   ),
                   title: Text(
                     'Upload foto makanan',
@@ -110,7 +110,7 @@ class HomePage extends StatelessWidget {
               child: Center(
                 child: ListTile(
                   leading: SizedBox(
-                    width: 40,
+                    width: 30,
                   ),
                   title: Text(
                     'Cari makanan',
